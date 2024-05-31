@@ -137,7 +137,7 @@ vue_002.component('item_vue_002', {
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
                         canon_img:'img/demo_img.jpg',
-                        canon_url:'https://www.google.com/',
+                        canon_url:'vue_js_1.html',
                     },
                     {
                         canon_name:'Tag生成器',
