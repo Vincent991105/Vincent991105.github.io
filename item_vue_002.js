@@ -25,7 +25,7 @@ vue_002.component('item_vue_002', {
             </li>
         </ul>
         <div class="item_vue_002_list">
-            <a class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" :href="item.canon_url">
+            <a data-aos="flip-right" data-aos-duration="1200" class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" :href="item.canon_url">
                 <img v-if="item.canon_img === ''" src='img/image_pic.png' :alt='item.canon_name' class="item_vue_002_img" >
                 <img v-else :src='item.canon_img' :alt='item.canon_name' class="item_vue_002_img" >
                 <ul class="item_vue_002_desc">
@@ -129,31 +129,24 @@ vue_002.component('item_vue_002', {
                         canon_name:'作品列表',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/demo_img.jpg',
-                        canon_url:'https://www.google.com/',
+                        canon_img:'img/vue_js_002.png',
+                        canon_url:'canon_list.html',
                     },
                     {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/demo_img.jpg',
+                        canon_img:'img/vue_js_001.png',
                         canon_url:'vue_js_1.html',
                     },
-                    {
-                        canon_name:'Tag生成器',
-                        canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
-                        canon_tag:['功能導向元件'],
-                        canon_img:'',
-                        canon_url:'https://www.google.com/',
-                    }
                 ],
                 job_canon:[
                     {
                         canon_name:'iOPEN MALL 開發專案',
                         canon_desc:'B2B2C開發專案',
                         canon_tag:['功能規劃','開發測試'],
-                        canon_img:'img/demo_img.jpg',
-                        canon_url:'https://www.google.com/',
+                        canon_img:'img/iopen_index.png',
+                        canon_url:'https://mall.iopenmall.tw/iopen/',
                     }
                     
                 ],
