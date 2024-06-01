@@ -107,11 +107,11 @@ vue_002.component('item_vue_002', {
             select_list:{
                 ui_canon:[
                     {
-                        canon_name:'電商網站首頁',
-                        canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
-                        canon_tag:['iopenmall','B2B2C商城'],
-                        canon_img:'img/demo_img.jpg',
-                        canon_url:'https://www.google.com/',
+                        canon_name:'A+B商品活動',
+                        canon_desc:'使用者可在後台設定此行銷活動，消費者可於前台在A區',
+                        canon_tag:['7-11','B2B2C商城'],
+                        canon_img:'img/iopen_index.png',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=94-2&t=tlZv41FdaTw7BapT-0',
                     }
                 ],
                 html_canon:[
@@ -119,7 +119,7 @@ vue_002.component('item_vue_002', {
                         canon_name:'前端作品集',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['portfolio','UI+切版'],
-                        canon_img:'img/demo_img.jpg',
+                        canon_img:'',
                         canon_url:'https://www.google.com/',
                     }
                     
@@ -129,14 +129,14 @@ vue_002.component('item_vue_002', {
                         canon_name:'作品列表',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/vue_js_002.png',
+                        canon_img:'',
                         canon_url:'canon_list.html',
                     },
                     {
                         canon_name:'Tag生成器',
                         canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
                         canon_tag:['功能導向元件'],
-                        canon_img:'img/vue_js_001.png',
+                        canon_img:'',
                         canon_url:'vue_js_1.html',
                     },
                 ],

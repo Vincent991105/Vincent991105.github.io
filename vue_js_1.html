@@ -9,18 +9,19 @@
     <title>新增標籤Vue.js</title>
 </head>
 <body>
-    <div id="header">
+    <div class="header" id="header">
         <header_item></header_item>
     </div>
     <div class="content" id="content_1">
         <item_vue_001></item_vue_001>
     </div>
-    <div class="mob_bottom_menu">
-        <a class="bottom_menu" href=""><img src="img/person_svgrepo.com.png" alt="">關於我</a>
-        <a class="bottom_menu" href=""><img src="img/work-agenda_svgrepo.com.png" alt="">作品</a>
-        <a class="bottom_menu" href=""><img src="img/contact-book_svgrepo.com.png" alt="">聯絡方式</a>
+    <div class="mob_bottom_menu" id="bottom_menu">
+        <a v-for="item in menu_list" :key="item.menu_name" class="bottom_menu" :href="item.menu_url"  v-show="item.menu_type" >
+            <img :src="item.menu_icon" :alt="item.menu_name">{{item.menu_name}}
+        </a>    
     </div>
     <script src="item_vue_001.js"></script>
     <script src="header.js"></script>
+    <script src="bottom_menu.js"></script>
 </body>
 </html>

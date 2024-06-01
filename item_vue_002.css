@@ -166,7 +166,6 @@
 @media (max-width:490px) {
     .item_vue_002{
         padding-top: 0;
-        padding-bottom: 50px;
     }
     .item_vue_002_menu{
         justify-content: flex-start;

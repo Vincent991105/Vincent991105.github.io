@@ -1,7 +1,22 @@
 const header = Vue.createApp({});
 
 header.component('header_item', {
-    template: `<div class="header">
+    data(){
+        return{
+            menu_list:[
+                {
+                    menu_name:'關於我',
+                    menu_url:'index.html'
+                },
+                {
+                    menu_name:'作品',
+                    menu_url:'canon_list.html'
+                }
+            ]
+        }
+    },
+
+    template: `
     <div class="menu_bar">
         <a href="index.html" class="logo">
             <img src="img/img.png" alt="logo">
@@ -12,9 +27,9 @@ header.component('header_item', {
             </div>
         </a>
         <ul class="menu">
-            <li><a href="index.html" class="main_color">關於我</a></li>
-            <li><a href="canon_list.html" class="main_color">作品</a></li>
-            <li><a href="" class="main_color">聯絡方式</a></li>
+            <li v-for="menu in menu_list" :key="menu.menu_name">
+                <a :href="menu.menu_url" class="main_color">{{ menu.menu_name }}</a>
+            </li>
         </ul>
     </div>
     <div class="switch_mob">
