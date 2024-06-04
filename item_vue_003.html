@@ -52,10 +52,7 @@
                         </li>
                     </ul>
                     <div class="item_vue_003_image">
-                        <img src="img/profile.jpg" alt="1">
-                        <img src="img/profile.jpg" alt="2">
-                        <img src="img/profile.jpg" alt="3">
-                        <img src="img/profile.jpg" alt="4">
+                        <img v-for="image in skill.skill_img" :src='image' alt="skill.skill_name">
                     </div>
                 </div>
             </div>

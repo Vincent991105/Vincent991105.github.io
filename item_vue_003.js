@@ -74,7 +74,7 @@ const vue_003 = Vue.createApp({
                                 ability_score:5,
                             }
                         ],
-                        skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
+                        skill_img:["img/profile.jpg","img/profile.jpg"]
                     }
                 ],
             }
