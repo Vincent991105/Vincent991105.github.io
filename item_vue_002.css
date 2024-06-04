@@ -184,6 +184,9 @@
         .item_vue_002_item{
             width: 100%;
             height: 37em;
+            .item_vue_002_img{
+                height: 150px;
+            }
         }
     }
 }
