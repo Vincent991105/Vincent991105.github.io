@@ -41,41 +41,22 @@
                         </ul>
                     </div>
                 </div>
-                <div class="main_color item_vue_003_exp">
-                    技能熟練程度：
-                    <span class="item_vue_003_result" v-for="skill in select_list[select_type_id]" v-show="select_skill_id === skill.skill_name">{{skill.skill_result}}</span>
-                </div>
-                <ul id="test" class="item_vue_003_result_score">
-                    <li class="main_color">基礎功能：
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                    </li>
-                    <li class="main_color">Auto-layout：
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                    </li>
-                    <li class="main_color">Prototype：
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                    </li>
-                    <li class="main_color">Component：
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                        <span class="item_vue_003_skill_point"></span>
-                    </li>
-                </ul>
-                <div id="skill_image" class="item_vue_003_image">
-                    <img src="img/profile.jpg" alt="1">
-                    <img src="img/profile.jpg" alt="2">
-                    <img src="img/profile.jpg" alt="3">
-                    <img src="img/profile.jpg" alt="4">
+                <div v-for="skill in select_list[select_type_id]" v-show="select_skill_id === skill.skill_name">
+                    <div class="main_color item_vue_003_exp">
+                        技能熟練程度：
+                        <span class="item_vue_003_result"  >{{skill.skill_result}}</span>
+                    </div>
+                    <ul class="item_vue_003_result_score">
+                        <li v-for="ability in skill.skill_type" class="main_color">{{ability.ability_name}}
+                            <span v-for="i in ability.ability_score"class="item_vue_003_skill_point"></span>
+                        </li>
+                    </ul>
+                    <div class="item_vue_003_image">
+                        <img src="img/profile.jpg" alt="1">
+                        <img src="img/profile.jpg" alt="2">
+                        <img src="img/profile.jpg" alt="3">
+                        <img src="img/profile.jpg" alt="4">
+                    </div>
                 </div>
             </div>
             <div id="skill_program" class="item_vue_003_list">

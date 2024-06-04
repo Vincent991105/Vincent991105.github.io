@@ -2,7 +2,7 @@ const vue_003 = Vue.createApp({
     data(){
         return{
             select_type_id:'design',
-            select_skill_id:'123',
+            select_skill_id:'',
             select_menu:[
                 {
                     id:'design',
@@ -31,8 +31,24 @@ const vue_003 = Vue.createApp({
                         skill_icon:'img/figma-file_svgrepo.com.svg',
                         skill_desc:['。介面設計軟體','。多人協作設計','。Prototype功能','。自動對齊工具'],
                         skill_result:'A級',
-                        skill_type:["基礎應用：","Auto-layout：","Prototype：","Component："],
-                        skill_rank:[5,4,4,4],
+                        skill_type:[
+                            {
+                                ability_name:"基礎應用：",
+                                ability_score:3,
+                            },
+                            {
+                                ability_name:"Auto-layout：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"Prototype：",
+                                ability_score:2,
+                            },
+                            {
+                                ability_name:"Component：",
+                                ability_score:1,
+                            }
+                        ],
                         skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
                     },
                     {
@@ -40,8 +56,24 @@ const vue_003 = Vue.createApp({
                         skill_icon:'img/figma-file_svgrepo.com.svg',
                         skill_desc:['。介面設計軟體','。多人協作設計','。Prototype功能','。自動對齊工具'],
                         skill_result:'A級',
-                        skill_type:["基礎應用：","Auto-layout：","Prototype：","Component："],
-                        skill_rank:[5,4,4,4],
+                        skill_type:[
+                            {
+                                ability_name:"基礎應用：",
+                                ability_score:5,
+                            },
+                            {
+                                ability_name:"Auto-layout：",
+                                ability_score:5,
+                            },
+                            {
+                                ability_name:"Prototype：",
+                                ability_score:5,
+                            },
+                            {
+                                ability_name:"Component：",
+                                ability_score:5,
+                            }
+                        ],
                         skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
                     }
                 ],
@@ -51,6 +83,7 @@ const vue_003 = Vue.createApp({
     methods:{
         switch_list(id){
             this.select_type_id = id;
+            this.select_skill_id = id[1].skill_name;
         },
         switch_skill(skill_id){
             this.select_skill_id = skill_id;
