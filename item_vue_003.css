@@ -177,18 +177,17 @@
 .item_vue_003_image{
     display: flex;
     padding: 10px 0px;
-    justify-content: space-between;
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
     gap:10px;
     overflow: hidden;
-}
-.item_vue_003_image img{
-    align-self: stretch;
-    width: 24%;
-    border-radius: 5px;
-    box-shadow: 0 0 4px #B5B5B5;
+    img{
+        align-self: stretch;
+        width: 24%;
+        border-radius: 5px;
+        box-shadow: 0 0 4px #B5B5B5;
+    }
 }
 
 @media (max-width:490px) {
