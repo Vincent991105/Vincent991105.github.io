@@ -53,6 +53,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.item_classic{
+    width:100%;
+}
+.mob{
+    display: none !important;;
+}
+@media(max-width:490px) {
+    .web{
+        display: none !important;;
+    } 
+    .mob{
+        display: flex !important;
+    }
+}
 
 /* CSS資料庫 */
 .main_color{

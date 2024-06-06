@@ -31,6 +31,7 @@ vue_003.component('item_vue_003', {
                     {
                         skill_name:'Figma',
                         skill_icon:'img/figma-file_svgrepo.com.svg',
+                        skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
                         skill_desc:['。介面設計軟體','。多人協作設計','。Prototype功能','。自動對齊工具'],
                         skill_result:'A級',
                         skill_type:[
@@ -54,14 +55,69 @@ vue_003.component('item_vue_003', {
                         skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
                     },
                     {
-                        skill_name:'456',
+                        skill_name:'AI',
+                        skill_icon:'img/adobe-illustrator_svgrepo.com.svg',
+                        skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
+                        skill_desc:['。精細矢量設計','。無限放大不失真','。強大圖層管理','。豐富插件支援'],
+                        skill_result:'B級',
+                        skill_type:[
+                            {
+                                ability_name:"基礎應用：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"Auto-layout：",
+                                ability_score:5,
+                            },
+                            {
+                                ability_name:"Prototype：",
+                                ability_score:5,
+                            },
+                            {
+                                ability_name:"Component：",
+                                ability_score:5,
+                            }
+                        ],
+                        skill_img:["img/profile.jpg","img/profile.jpg"]
+                    }
+                ],
+                program:[
+                    {
+                        skill_name:'Figma',
                         skill_icon:'img/figma-file_svgrepo.com.svg',
+                        skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
                         skill_desc:['。介面設計軟體','。多人協作設計','。Prototype功能','。自動對齊工具'],
                         skill_result:'A級',
                         skill_type:[
                             {
                                 ability_name:"基礎應用：",
-                                ability_score:5,
+                                ability_score:3,
+                            },
+                            {
+                                ability_name:"Auto-layout：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"Prototype：",
+                                ability_score:2,
+                            },
+                            {
+                                ability_name:"Component：",
+                                ability_score:1,
+                            }
+                        ],
+                        skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
+                    },
+                    {
+                        skill_name:'AI',
+                        skill_icon:'img/adobe-illustrator_svgrepo.com.svg',
+                        skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
+                        skill_desc:['。精細矢量設計','。無限放大不失真','。強大圖層管理','。豐富插件支援'],
+                        skill_result:'B級',
+                        skill_type:[
+                            {
+                                ability_name:"基礎應用：",
+                                ability_score:4,
                             },
                             {
                                 ability_name:"Auto-layout：",
@@ -108,19 +164,23 @@ vue_003.component('item_vue_003', {
                 <div 
                     @click="switch_skill(skill.skill_name)" 
                     v-for="skill in select_list[select_type_id]" 
-                    :class="{'skill_reset': true,'skill_active':select_skill_id === skill.skill_name}" 
+                    :class="{'skill_reset': true,'web': true,'skill_active':select_skill_id === skill.skill_name}" 
                     :key="skill.skill_name"
                 >
-                    <div class="item_vue_003_title">
+                    <a class="item_vue_003_title web">
                         <img :src='skill.skill_icon' alt="skill.skill_name">
                         {{skill.skill_name}}
-                    </div>
-                    <ul v-if="select_skill_id === skill.skill_name" class="item_vue_003_skill_desc">
+                    </a>
+                    <ul v-if="select_skill_id === skill.skill_name" class="item_vue_003_skill_desc web">
                         <li v-for="desc in skill.skill_desc">{{desc}}</li>
                     </ul>
                 </div>
+                <a v-for="skill in select_list[select_type_id]" class="item_vue_003_title mob" :href="skill.skill_mob_link">
+                        <img :src='skill.skill_icon' alt="skill.skill_name">
+                        {{skill.skill_name}}
+                    </a>
             </div>
-            <div v-for="skill in select_list[select_type_id]" v-show="select_skill_id === skill.skill_name">
+            <div class="item_vue_003_intro" v-for="skill in select_list[select_type_id]" v-show="select_skill_id === skill.skill_name">
                 <div class="main_color item_vue_003_exp">
                     技能熟練程度：
                     <span class="item_vue_003_result"  >{{skill.skill_result}}</span>
