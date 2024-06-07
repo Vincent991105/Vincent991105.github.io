@@ -37,7 +37,7 @@ vue_003.component('item_vue_003', {
                         skill_type:[
                             {
                                 ability_name:"基礎應用：",
-                                ability_score:3,
+                                ability_score:5,
                             },
                             {
                                 ability_name:"Auto-layout：",
@@ -45,11 +45,11 @@ vue_003.component('item_vue_003', {
                             },
                             {
                                 ability_name:"Prototype：",
-                                ability_score:2,
+                                ability_score:4,
                             },
                             {
                                 ability_name:"Component：",
-                                ability_score:1,
+                                ability_score:4,
                             }
                         ],
                         skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
@@ -66,17 +66,65 @@ vue_003.component('item_vue_003', {
                                 ability_score:4,
                             },
                             {
-                                ability_name:"Auto-layout：",
-                                ability_score:5,
+                                ability_name:"工具應用：",
+                                ability_score:4,
                             },
                             {
-                                ability_name:"Prototype：",
-                                ability_score:5,
+                                ability_name:"圖層組織：",
+                                ability_score:4,
                             },
                             {
-                                ability_name:"Component：",
-                                ability_score:5,
+                                ability_name:"效果實作：",
+                                ability_score:3,
                             }
+                        ],
+                        skill_img:["img/profile.jpg","img/profile.jpg"]
+                    },
+                    {
+                        skill_name:'PS',
+                        skill_icon:'img/adobe-photoshop_svgrepo.com.svg',
+                        skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
+                        skill_desc:['。強大圖像編輯','。多層次編輯支持','。高度精確控制','。廣泛格式支持'],
+                        skill_result:'C級',
+                        skill_type:[
+                            {
+                                ability_name:"基礎應用：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"圖層管理：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"選取技術：",
+                                ability_score:3,
+                            },
+                            {
+                                ability_name:"修圖技巧：",
+                                ability_score:3,
+                            }
+                        ],
+                        skill_img:["img/profile.jpg","img/profile.jpg"]
+                    },
+                    {
+                        skill_name:'DW',
+                        skill_icon:'img/adobe-dreamweaver_svgrepo.com.svg',
+                        skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
+                        skill_desc:['。視覺化設計工具','。即時預覽功能','。多語言支持','。FTP 集成方便'],
+                        skill_result:'C級',
+                        skill_type:[
+                            {
+                                ability_name:"基礎應用：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"排版工具：",
+                                ability_score:4,
+                            },
+                            {
+                                ability_name:"程式輔助：",
+                                ability_score:3,
+                            },
                         ],
                         skill_img:["img/profile.jpg","img/profile.jpg"]
                     }

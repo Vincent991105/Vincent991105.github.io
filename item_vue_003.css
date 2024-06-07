@@ -268,13 +268,4 @@
     .item_vue_003_image img{
         width: 100%;
     }
-    .mob_bottom_menu{
-        display: flex;
-        height: 50px;
-        width: 100%;
-        position: fixed;
-        bottom:0px;
-        z-index: 1000;
-        background-color: #FFF;
-    }
 }

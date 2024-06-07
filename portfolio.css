@@ -757,7 +757,7 @@ table {
         height: 50px;
         width: 100%;
         position: fixed;
-        bottom:0px;
+        bottom: -1px;
         z-index: 1000;
         background-color: #FFF;
     }
