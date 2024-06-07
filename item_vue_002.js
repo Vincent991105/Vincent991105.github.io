@@ -107,8 +107,15 @@ vue_002.component('item_vue_002', {
             select_list:{
                 ui_canon:[
                     {
+                        canon_name:'104網站設計規劃',
+                        canon_desc:'依據目前趨勢進行介面重新規劃；配合104原有的MBTI檢測新增了MBTI專區。',
+                        canon_tag:['104','招聘網站'],
+                        canon_img:'img/104_web_design.png',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=79-27&t=l6y2lXiEYAIkMcsG-0',
+                    },
+                    {
                         canon_name:'A+B商品活動',
-                        canon_desc:'使用者可在後台設定此行銷活動，消費者可於前台在A區',
+                        canon_desc:'使用者可在後台設定此行銷活動，讓消費者可於前台在進行A+B選購。',
                         canon_tag:['7-11','B2B2C商城'],
                         canon_img:'img/iopen_index.png',
                         canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=94-2&t=tlZv41FdaTw7BapT-0',

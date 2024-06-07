@@ -11,6 +11,10 @@ header.component('header_item', {
                 {
                     menu_name:'作品',
                     menu_url:'canon_list.html'
+                },
+                {
+                    menu_name:'一頁式履歷',
+                    menu_url:''
                 }
             ]
         }
@@ -32,7 +36,7 @@ header.component('header_item', {
             </li>
         </ul>
     </div>
-    <div class="switch_mob">
+    <div class="switch_mob" style="display:none">
         <a id="web" href="/index.html?forceDevice=mobile">
             切換模式
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
