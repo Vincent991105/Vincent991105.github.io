@@ -151,7 +151,7 @@ vue_003.component('item_vue_003', {
                                 ability_score:3,
                             },
                         ],
-                        skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
+                        skill_img:['img/104_img.png'],
                     },
                     {
                         skill_name:'CSS',
@@ -345,7 +345,7 @@ vue_003.component('item_vue_003', {
                         v-for="i in ability.ability_score"class="item_vue_003_skill_point"></span>
                     </li>
                 </ul>
-                <div class="item_vue_003_image">
+                <div class="item_vue_003_image" v-show="skill.skill_img != ''">
                     <img v-for="image in skill.skill_img" :src='image' alt="skill.skill_name">
                 </div>
             </div>

@@ -25,7 +25,7 @@ vue_002.component('item_vue_002', {
             </li>
         </ul>
         <div class="item_vue_002_list">
-            <a data-aos="flip-right" data-aos-duration="1200" class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" :href="item.canon_url">
+            <a data-aos="flip-right" data-aos-duration="800" class="item_vue_002_item" v-for="item in select_list[select_type_id]" :key="item.canon_name" :href="item.canon_url" target="_blank">
                 <img v-if="item.canon_img === ''" src='img/image_pic.png' :alt='item.canon_name' class="item_vue_002_img" >
                 <img v-else :src='item.canon_img' :alt='item.canon_name' class="item_vue_002_img" >
                 <ul class="item_vue_002_desc">
@@ -111,37 +111,38 @@ vue_002.component('item_vue_002', {
                         canon_desc:'依據目前趨勢進行介面重新規劃；配合104原有的MBTI檢測新增了MBTI專區。',
                         canon_tag:['104','招聘網站'],
                         canon_img:'img/104_web_design.png',
-                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=79-27&t=l6y2lXiEYAIkMcsG-0',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=79-204&t=izvtVK7UYGc0mGKF-4',
                     },
-                    {
-                        canon_name:'A+B商品活動',
-                        canon_desc:'使用者可在後台設定此行銷活動，讓消費者可於前台在進行A+B選購。',
-                        canon_tag:['7-11','B2B2C商城'],
-                        canon_img:'img/iopen_index.png',
-                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=94-2&t=tlZv41FdaTw7BapT-0',
-                    }
+                    
                 ],
                 html_canon:[
                     {
                         canon_name:'前端作品集',
-                        canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
+                        canon_desc:'依據個人風格規劃了一個屬於自己的作品集網站。',
                         canon_tag:['portfolio','UI+切版'],
-                        canon_img:'',
-                        canon_url:'https://www.google.com/',
+                        canon_img:'img/vincent_portfolio.png',
+                        canon_url:'index.html',
                     }
                     
                 ],
                 vue_canon:[
                     {
+                        canon_name:'分類說明元件',
+                        canon_desc:'主要是為了說明各類技能的對應能力值。',
+                        canon_tag:['功能導向元件'],
+                        canon_img:'img/item_vue_003.png',
+                        canon_url:'index.html',
+                    },
+                    {
                         canon_name:'作品列表',
-                        canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
+                        canon_desc:'用於展示各類作品，可設定作品圖，文案及說明。',
                         canon_tag:['功能導向元件'],
                         canon_img:'img/item_vue_002.png',
                         canon_url:'canon_list.html',
                     },
                     {
                         canon_name:'Tag生成器',
-                        canon_desc:'此網站需具備商品分類選單、BN、商品元件、會員中心、手機介面和置底功能選單等等',
+                        canon_desc:'可依照輸入的內容生成TAG，可設定連結，顏色等。',
                         canon_tag:['功能導向元件'],
                         canon_img:'img/item_vue_001.png',
                         canon_url:'vue_js_1.html',
@@ -154,7 +155,35 @@ vue_002.component('item_vue_002', {
                         canon_tag:['功能規劃','開發測試'],
                         canon_img:'img/iopen_index.png',
                         canon_url:'https://mall.iopenmall.tw/iopen/',
-                    }
+                    },
+                    {
+                        canon_name:'A+B商品活動',
+                        canon_desc:'使用者可在後台設定此行銷活動，讓消費者可於前台在進行A+B選購。',
+                        canon_tag:['7-11','B2B2C商城'],
+                        canon_img:'img/iOPENmall_A+B.png',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=213-41051&t=C0QexdIy6yp5MHYw-4',
+                    },
+                    {
+                        canon_name:'特殊賣場',
+                        canon_desc:'消費者需要輸入店家指定的邀請碼，才可進入賣場進行購物。',
+                        canon_tag:['7-11','B2B2C商城'],
+                        canon_img:'img/iOPENmall_special_mart.png',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=213-41778&t=C0QexdIy6yp5MHYw-4',
+                    },
+                    {
+                        canon_name:'隱形賣場',
+                        canon_desc:'店家可將無法被搜尋到的商品，放入此商城並將網址發送給消費者。',
+                        canon_tag:['7-11','B2B2C商城'],
+                        canon_img:'img/iOPENmall_invisible_mart.png',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=213-40544&t=C0QexdIy6yp5MHYw-4',
+                    },
+                    {
+                        canon_name:'首頁佈置【優化】',
+                        canon_desc:'依據原先首頁佈置的基礎，針對版頭增加了設定社群連結和選單的功能。',
+                        canon_tag:['7-11','B2B2C商城'],
+                        canon_img:'img/首頁佈置規劃.png',
+                        canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=116-59955&t=C0QexdIy6yp5MHYw-4',
+                    },
                     
                 ],
             }
