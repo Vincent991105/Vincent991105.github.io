@@ -12,10 +12,10 @@ header.component('header_item', {
                     menu_name:'作品',
                     menu_url:'canon_list.html'
                 },
-                {
-                    menu_name:'一頁式履歷',
-                    menu_url:''
-                }
+                // {
+                //     menu_name:'一頁式履歷',
+                //     menu_url:''
+                // }
             ]
         }
     },
