@@ -90,12 +90,10 @@
 }
 .skill_active{
     flex: 1 0 0;
-    max-width: 326px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .item_vue_003_title{
     display: flex;
-    padding: 0px 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -113,7 +111,6 @@
 .item_vue_003_skill_desc{
     display: flex;
     flex-direction: column;
-    max-width: 160px;
     padding: 10px;
     align-items: flex-start;
     gap: 10px;
@@ -198,7 +195,6 @@
         box-shadow: 0 0 4px #B5B5B5;
     }
 }
-
 
 @media (max-width:490px) {
     #web{
