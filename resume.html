@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="resume.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/vue@3.2.20/dist/vue.global.prod.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
     <script src="action_bn.js"></script>
     <title>一頁式履歷</title>
 </head>
@@ -13,119 +16,141 @@
     <div class="header" id="header">
         <header_item_02></header_item_02>
     </div>
-    <div class="action_bn_sticky no-sticky">
-        <div class="action_bn black">
-            <ul>
-                <li class="show">Victory</li>
-                <li>Intense</li>
-                <li>Neoteric</li>
-                <li>Clement</li>
-                <li>Earthy</li>
-                <li>Neutral</li>
-                <li>Tolerant</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>勝</br>利</h2>
+    <div class="resume_item_001">
+        <div class="action_bn_sticky no-sticky">
+            <div class="action_bn black">
+                <ul>
+                    <li class="show">Victory</li>
+                    <li>Intense</li>
+                    <li>Neoteric</li>
+                    <li>Clement</li>
+                    <li>Earthy</li>
+                    <li>Neutral</li>
+                    <li>Tolerant</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>勝</br>利</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
+            <div class="action_bn red">
+                <ul>
+                    <li>Victory</li>
+                    <li class="show">Intense</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>激</br>烈</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
-        </div>
-        <div class="action_bn red">
-            <ul>
-                <li>Victory</li>
-                <li class="show">Intense</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>激</br>烈</h2>
+            <div class="action_bn orange">
+                <ul>
+                    <li>Victory</li>
+                    <li>Intense</li>
+                    <li class="show">Neoteric</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>新</br>生</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
+            <div class="action_bn yellow">
+                <ul>
+                    <li>Victory</li>
+                    <li>Intense</li>
+                    <li>Neoteric</li>
+                    <li class="show">Clement</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>溫</br>和</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
-        </div>
-        <div class="action_bn orange">
-            <ul>
-                <li>Victory</li>
-                <li>Intense</li>
-                <li class="show">Neoteric</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>新</br>生</h2>
+            <div class="action_bn green">
+                <ul>
+                    <li>Victory</li>
+                    <li>Intense</li>
+                    <li>Neoteric</li>
+                    <li>Clement</li>
+                    <li class="show">Earthy</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>踏</br>實</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
+            <div class="action_bn blue">
+                <ul>
+                    <li>Victory</li>
+                    <li>Intense</li>
+                    <li>Neoteric</li>
+                    <li>Clement</li>
+                    <li>Earthy</li>
+                    <li  class="show">Neutral</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>中</br>立</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
-        </div>
-        <div class="action_bn yellow">
-            <ul>
-                <li>Victory</li>
-                <li>Intense</li>
-                <li>Neoteric</li>
-                <li class="show">Clement</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>溫</br>和</h2>
-            </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
-            </div>
-        </div>
-        <div class="action_bn green">
-            <ul>
-                <li>Victory</li>
-                <li>Intense</li>
-                <li>Neoteric</li>
-                <li>Clement</li>
-                <li class="show">Earthy</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>踏</br>實</h2>
-            </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
-            </div>
-        </div>
-        <div class="action_bn blue">
-            <ul>
-                <li>Victory</li>
-                <li>Intense</li>
-                <li>Neoteric</li>
-                <li>Clement</li>
-                <li>Earthy</li>
-                <li  class="show">Neutral</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>中</br>立</h2>
-            </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
-            </div>
-        </div>
-        <div class="action_bn purple">
-            <ul>
-                <li>Victory</li>
-                <li>Intense</li>
-                <li>Neoteric</li>
-                <li>Clement</li>
-                <li>Earthy</li>
-                <li>Neutral</li>
-                <li class="show">Tolerant</li>
-            </ul>
-            <div class="action_bn_title">
-                <h2>寬</br>容</h2>
-            </div>
-            <div class="scroll_bar">
-                <span></span>
-                <p>Scroll<br>Down</p>
+            <div class="action_bn purple">
+                <ul>
+                    <li>Victory</li>
+                    <li>Intense</li>
+                    <li>Neoteric</li>
+                    <li>Clement</li>
+                    <li>Earthy</li>
+                    <li>Neutral</li>
+                    <li class="show">Tolerant</li>
+                </ul>
+                <div class="action_bn_title">
+                    <h2>寬</br>容</h2>
+                </div>
+                <div class="scroll_bar">
+                    <span></span>
+                    <p>Scroll<br>Down</p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="my_self">
+        <div data-aos="fade-right" data-aos-duration="1200" class="my_self_desc">
+            <div>
+                <span>V</span>
+                <span>I</span>
+                <span>N</span>
+                <span>C</span>
+                <span>E</span>
+                <span>N</span>
+                <span>T</span></div>
+            <p>Be best for Yourself ...</p>
+        </div>
+        <div class="scroll_bar">
+            <span></span>
+            <p>Scroll<br>Down</p>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+      </script>
     <script src="header.js"></script>
 </body>
 </html>
