@@ -122,7 +122,14 @@ vue_002.component('item_vue_002', {
                         canon_tag:['portfolio','UI+切版'],
                         canon_img:'img/vincent_portfolio.png',
                         canon_url:'index.html',
-                    }
+                    },
+                    {
+                        canon_name:'104網站首頁切版',
+                        canon_desc:'依據重新規劃的版本進行頁面切版，其中包含RWD的規劃',
+                        canon_tag:['HTML切版','RWD介面'],
+                        canon_img:'img/104_web_front.png',
+                        canon_url:'104.html',
+                    },
                     
                 ],
                 vue_canon:[
