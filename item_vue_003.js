@@ -237,33 +237,33 @@ vue_003.component('item_vue_003', {
                         skill_name:'Flutter',
                         skill_icon:'img/flutter_svgrepo.com.svg',
                         skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
-                        skill_desc:['。介面設計軟體','。多人協作設計','。Prototype功能','。自動對齊工具'],
-                        skill_result:'B級',
+                        skill_desc:['。APP開發工具','。快速的开发周期','。热重载','。高效的异步编程模型'],
+                        skill_result:'C級',
                         skill_type:[
                             {
                                 ability_name:"基礎應用：",
-                                ability_score:3,
-                            },
-                            {
-                                ability_name:"Auto-layout：",
                                 ability_score:4,
                             },
                             {
-                                ability_name:"Prototype：",
-                                ability_score:2,
+                                ability_name:"Dart语言：",
+                                ability_score:3,
                             },
                             {
-                                ability_name:"Component：",
-                                ability_score:1,
+                                ability_name:"框架應用：",
+                                ability_score:3,
+                            },
+                            {
+                                ability_name:"程序架构：",
+                                ability_score:3,
                             }
                         ],
                         skill_img:["img/profile.jpg","img/profile.jpg","img/profile.jpg","img/profile.jpg"]
                     },
                     {
-                        skill_name:'unity',
+                        skill_name:'Unity',
                         skill_icon:'img/unity_svgrepo.com.svg',
                         skill_mob_link:'https://chatgpt.com/c/e63098b6-aef1-4fb1-b967-c95865c9b2a6',
-                        skill_desc:['。精細矢量設計','。無限放大不失真','。強大圖層管理','。豐富插件支援'],
+                        skill_desc:['。遊戲軟體開發工具','。實際預覽遊戲介面','。簡易操作流程','。提供多元掛件'],
                         skill_result:'B級',
                         skill_type:[
                             {
@@ -271,15 +271,15 @@ vue_003.component('item_vue_003', {
                                 ability_score:4,
                             },
                             {
-                                ability_name:"Auto-layout：",
-                                ability_score:5,
+                                ability_name:"動畫渲染：",
+                                ability_score:3,
                             },
                             {
-                                ability_name:"Prototype：",
-                                ability_score:5,
+                                ability_name:"程式編碼：",
+                                ability_score:4,
                             },
                             {
-                                ability_name:"Component：",
+                                ability_name:"創意開發：",
                                 ability_score:5,
                             }
                         ],

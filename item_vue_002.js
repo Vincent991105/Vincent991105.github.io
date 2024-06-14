@@ -102,6 +102,12 @@ vue_002.component('item_vue_002', {
                     menu_name:'職場作品',
                     select_desc:'職場時期參與作品',
                     is_active:false,
+                },
+                {
+                    id:'flutter_canon',
+                    menu_name:'Flutter作品',
+                    select_desc:'App切版內容',
+                    is_active:false,
                 }
             ],
             select_list:{
@@ -191,7 +197,15 @@ vue_002.component('item_vue_002', {
                         canon_img:'img/首頁佈置規劃.png',
                         canon_url:'https://www.figma.com/design/C2ZoSosTt4ggoSnqctkGks/%E4%BD%9C%E5%93%81%E9%9B%86?node-id=116-59955&t=C0QexdIy6yp5MHYw-4',
                     },
-                    
+                ],
+                flutter_canon:[
+                    {
+                        canon_name:'APP版本作品集',
+                        canon_desc:'透過Flutter工具切版APP並進行APK打包',
+                        canon_tag:['Flutter','Aos APP'],
+                        canon_img:'img/flutter_portfolio.png',
+                        canon_url:'https://drive.google.com/file/d/1NQ9pBtvca-ksbGdWGEAtFQKnw0YMg8hE/view?usp=drive_link',
+                    },
                 ],
             }
         };
