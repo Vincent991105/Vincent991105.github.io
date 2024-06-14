@@ -1,16 +1,6 @@
-.content{
-    margin: 0;
-    max-width: none;
-}
-
-@media (max-width:1280px) {
-    .content{
-        max-width: none;
-    }
-}
-
 body{
     height: auto;
+    background: rgba(181, 39, 0, 0.15);
 }
 
 .main_color{
@@ -195,6 +185,149 @@ body{
             font-family: "Noto Sans TC";
             font-size: 70px;
             font-weight: 900;
+        }
+    }
+}
+
+.resume_item_002{
+    padding: 30px 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    img{
+        width: 280px;
+        padding-right: 20px;
+    }
+    .name_list{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 14%;
+            gap:5px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+            background-size: cover; /* This makes the image cover the whole background */
+            background-repeat: no-repeat; /* This prevents the image from repeating */
+            background-position: center;
+            color: #FFF;
+            text-align: center;
+            font-family: "Noto Sans TC";
+            font-size: 36px;
+            font-weight: 900;
+            box-shadow: 0px 4px 12px #000;
+            .name_desc{
+                display: none;
+                justify-content: center;
+                width: 100%;
+                gap:10px;
+                p{
+                    font-size: 24px;
+                    line-height: 26px;
+                    width: 25px;
+                }
+                span{
+                    background: #D9D9D9;
+                    width: 3px;
+                    flex-shrink: 0;
+                    align-self: stretch;
+                }
+            }
+        }
+        div:hover{
+            .name_desc{
+                display:flex;
+            }
+        }
+        div:nth-of-type(2){
+            background: linear-gradient(rgba(226, 33, 44, 0.80), rgba(226, 33, 44, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+        }
+        div:nth-of-type(3){
+            background: linear-gradient(rgba(252, 106, 0, 0.80), rgba(252, 106, 0, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+        }
+        div:nth-of-type(4){
+            background: linear-gradient(rgba(229, 190, 51, 0.80), rgba(229, 190, 51, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+        }
+        div:nth-of-type(5){
+            background: linear-gradient(rgba(89, 167, 117, 0.80), rgba(89, 167, 117, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+        }
+        div:nth-of-type(6){
+            background: linear-gradient(rgba(95, 127, 186, 0.80), rgba(95, 127, 186, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+        }
+        div:nth-of-type(7){
+            background: linear-gradient(rgba(138, 89, 176, 0.80), rgba(138, 89, 176, 0.80)), url('img/demo_img.jpg') lightgray 50% / cover no-repeat;
+        }
+    }
+}
+
+.resume_item_003{
+    width: 100%;
+    padding: 50px;
+    p{
+        color: #6A6A6A;
+        font-family: "Noto Sans TC";
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .malaysia{
+        width: 100%;
+        display: flex;
+        .malaysia_desc{
+            display: flex;
+            width: 100%;
+            padding: 10px 0px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            flex: 1 0 0;
+            align-self: stretch;
+            .malaysia_title{
+                display: flex;
+                width: 100%;
+                gap: 10px;
+                padding-bottom: 10px;
+                border-bottom: 10px solid #00B47E;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    justify-content: flex-end;
+                }
+                p{
+                    color: #00B47E;
+                    font-family: "Noto Sans TC";
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                h2{
+                    color: #6A6A6A;
+                    font-family: "Noto Sans TC";
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .malaysia_svg{
+            div{
+                display: flex;
+                .circle{
+                    display: block;
+                    width: 67.43px;
+                    height: 67.43px;
+                    border-radius: 100%;
+                    background: #E0492A;
+                }
+                .line{
+                    display: block;
+                    width: 80%;
+                    height: 20px;
+                    background: #E0492A;
+                }
+            }
         }
     }
 }
