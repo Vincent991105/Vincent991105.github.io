@@ -12,7 +12,7 @@ body{
     color: white;
 }
 
-.title p:hover,h4:hover{
+.title p:hover , .title h4:hover{
     color: #00B47E;
 }
 
@@ -194,11 +194,18 @@ body{
     }
 }
 
+.content{
+    margin: 0;
+    max-width: none;
+    align-items: center;
+}
+
 .resume_item_002{
     padding: 30px 0;
     display: flex;
     width: 100%;
     height: auto;
+    max-width: 1380px;
     img{
         width: 280px;
         padding-right: 20px;
@@ -272,6 +279,7 @@ body{
 .resume_item_003{
     width: 100%;
     padding: 50px 50px 0 50px;
+    max-width: 1380px;
     p{
         color: #6A6A6A;
         font-family: "Noto Sans TC";
@@ -360,6 +368,113 @@ body{
                     width: 200%;
                     left: -199%;
                     right: -1%;
+                }
+            }
+        }
+    }
+}
+
+.resume_item_004{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    padding: 20px 50px;
+    gap: 40px;
+    background-color: #00B47E;
+    .num_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        gap:20px;
+        h2{
+            font-family: "Noto Sans TC";
+            font-size: 46px;
+            color:#FFF;
+            font-weight: bold;
+        }
+    }
+    .desc_scroll{
+        display: block;
+        flex: 1;
+        height: 100%;
+        overflow-y: scroll;
+        padding-right: 20px;
+        .scroll_bar{
+            justify-content: space-evenly;
+            span{
+                height: 80%;
+            }
+        }
+    }
+    .desc_scroll::-webkit-scrollbar {
+        width: 8px; /* 垂直滚动条的宽度 */
+        height: 8px; /* 水平滚动条的高度 */
+    }
+    .desc_scroll::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.05);; /* 滚动条的颜色 */
+        border-radius: 5px; /* 滚动条的圆角 */
+    }
+    .desc{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex: 1;
+        .job_desc{
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            flex: 1;
+            gap: 20px;
+            .job_title{
+                h4{
+                    font-size: 18px;
+                    font-family: "Noto Sans TC";
+                    color: #FFF;
+                    line-height: normal;
+                }
+                h3{
+                    font-size: 36px;
+                    font-family: "Noto Sans TC";
+                    color: #FFF;
+                    line-height: normal;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .detail_desc{
+                flex: 1;
+                font-size: 24px;
+                color: #FFF;
+                font-weight: bold;
+                line-height: normal;
+                p{
+                    line-height: 24px;
+                }
+            }
+            .supply{
+                display: flex;
+                align-items: center;
+                p{
+                    font-size: 24px;
+                    line-height: normal;
+                    color: #FFF;
+                    font-weight: bold;
+                }
+                div{
+                    width: 250px;
+                    height: 50px;
+                    padding: 10px;
+                    background-color: #FFF;
+                    border-radius: 5px;
+                    span{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: url("img/mabuchi.png") lightgray 50% / cover no-repeat;
+                    }
                 }
             }
         }
